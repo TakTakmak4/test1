@@ -1,0 +1,28 @@
+{
+    "items":[
+        {
+            "kind":"eew",
+            "reportnum":1,
+            "latest":0,
+            "lat":34.123,
+            "lng":138.123,
+            "origintime":"20181007101955"
+        },
+        {
+            "kind":"eew",
+            "reportnum":2,
+            "latest":0,
+            "lat":35.123,
+            "lng":136.123,
+            "origintime":"20181007101955"
+        },
+        {
+            "kind":"eew",
+            "reportnum":3,
+            "latest":1,
+            "lat":36.123,
+            "lng":139.123,
+            "origintime":"20181007101955"
+        }
+    ]
+}
