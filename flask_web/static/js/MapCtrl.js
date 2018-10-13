@@ -1,10 +1,12 @@
 // クラスとコンストラクタは関数を使って定義します
 MapCtrl = function() {
   this.eqmap;
+  this.eqdaylist;
   this.wavegraphctrl;
 };
 MapCtrl.prototype.setWaveGraphCtrl = function(_wavegraphctrl) {
     this.wavegraphctrl = _wavegraphctrl;
+    this.wavegraphctrl.setInitGraph();
 };
 MapCtrl.prototype.makeMap = function() {
   this.eqmap = L.map('mapid').setView([35.0, 140.0], 5);
@@ -33,7 +35,6 @@ MapCtrl.prototype.protEq = function() {
             }).addTo(that.eqmap);
             circle.on('click', function (e) {
                 that.wavegraphctrl.makeGraph();
-                alert(value.lat);
             });
             console.log(value);
         });

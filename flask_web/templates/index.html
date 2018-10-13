@@ -1,9 +1,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>一言SNS</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.1.2/css/bulma.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <title>REIS推定比較ページ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.css.map">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
     <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
     <script src="https://d3js.org/d3.v5.min.js"></script>
@@ -14,27 +15,16 @@
     <header class="nav">
       <div class="nav-left">
         <span class="nav-item">
-          <span class="fa fa-language"></span>一言SNS
+          <span class="fa fa-language"></span>REIS推定比較ページ
         </span>
       </div>
       <div class="nav-right">
-        <span class="nav-item">
-          <div class="control has-addons">
-            <input class="input" type="search" name="search" placeholder="キーワード検索">
-            <a class="button is-info">
-              <i class="fa fa-search"></i>検索
-            </a>
-          </div>
-        </span>
-        <span class="nav-item">
-          <a href="#" class="fa fa-user">ログイン</a>
-        </span>
       </div>
       <div class="hero is-info is-bold">
         <div class="hero-body">
           <div class="container">
-            <h1 class="title">CASAREAL</h1>
-            <h2 class="subtitle">@casareal-ls</h2>
+            <h1 class="title">REIS</h1>
+            <h2 class="subtitle">比較ページ</h2>
           </div>
         </div>
       </div>
@@ -45,63 +35,30 @@
         <div class="level-item tabs">
           <ul>
             <li class="is-active">
-              <a>最近の一言</a>
+              <a>波形表示</a>
             </li>
             <li>
-              <a>古い一言</a>
-            </li>
-            <li>
-              <a>コメント付き</a>
+              <a>推定比較画像</a>
             </li>
           </ul>
-        </div>
-      </div>
-      <div class="level-right">
-        <div class="level-item">
-          <a class="button is-greylight">フォロー</a>
         </div>
       </div>
     </section>
     <main class="columns">
       <div class="submenu column is-3">
-        <aside>カサレアルは、ＸＸＸＸＸＸＸＸを実現する△△△△△△△△です。 </aside>
+        <aside>ここにカレンダーUIを設置、日付→地震ID(EEW)→地図に表示 </aside>
         <aside class="box menu">
-          <p class="menu-label">おすすめの一言 </p>
+          <p class="menu-label">XXX </p>
           <ul class="menu-list">
             <li>
-              <a href="#">株式会社カサ
-                <small>@casainc</small>
+              <a href="#">AAA
+                <small>BBB</small>
               </a>
             </li>
             <li>
-              <a href="#">レア製作所
-                <small>@rea-product</small>
+              <a href="#">CCC
+                <small>DDD</small>
               </a>
-            </li>
-            <li>
-              <a href="#">オフィス・アル
-                <small>@office-al</small>
-              </a>
-            </li>
-          </ul>
-          <p class="menu-label">キーワード </p>
-          <ul class="menu-list">
-            <li>
-              <a href="#">システム開発</a>
-            </li>
-            <li>
-              <a class="is-active" href="#">技術教育</a>
-              <ul>
-                <li>
-                  <a href="#">一社研修</a>
-                </li>
-                <li>
-                  <a href="#">定期開催コース</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">ソフトウェアテスティング</a>
             </li>
           </ul>
         </aside>
@@ -110,10 +67,13 @@
         <article class="box media">
             <div class="media-content">
                 <div class="content">
-                    <div id="mapid"></div>本文
+                  震源表示<div id="mapid"></div>
                 </div>
             </div>
         </article>
+      </div>
+      <div class="column">
+        <div id="grapharea"></div>
       </div>
     </main>
     <!-- 記述場所④ -->
