@@ -30,9 +30,9 @@ MapCtrl.prototype.protEq = function() {
            var circle = L.circle([value.lat, value.lng], {
                 color: 'red',
                 fillColor: '#f03',
-                fillOpacity: 0.5,
-                radius: 100
+                fillOpacity: 0.5
             }).addTo(that.eqmap);
+            circle.setRadius(200);
             circle.on('click', function (e) {
                 that.wavegraphctrl.makeGraph();
             });
